@@ -1,0 +1,192 @@
+/*--- Mobile Version ---*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+      /*--- Template on all sites ---*/
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: #212121;
+        height: 69px;
+    }
+
+        header .nav_menu {
+            margin-left: 16px;
+            width: 32px;
+            height: 32px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            margin-left: 69px;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+    }
+
+    /*--- Sidenav ---*/
+
+    #sidenav_header {
+        background-color: #212121;
+        height: 69px;
+        display: flex;
+        flex-direction: row;
+    }
+
+        #sidenav_header .nav_menu {
+            margin-left: 16px;
+            width: 32px;
+            height: 32px;
+            margin-top: auto;
+            margin-bottom: auto;
+    }
+
+
+    #sidenav {
+    width: 0%;
+    }
+
+        #sidenav a {
+            text-decoration: none;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #sidenav h1 {
+            color: black;
+            margin-left: 20px;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        #sidenav .sidenav_icon {
+            overflow: hidden;
+            height: 36px;
+            width: 36px;
+            margin: auto;
+            margin-left: 16px;
+            margin-right: 0;
+    }
+
+    
+/*--- Javascripts ---*/ 
+         
+    .moved {
+        animation: swiperight 0.5s 1;
+        animation-fill-mode: forwards;
+     }
+
+    .hidden {
+        overflow: hidden;
+        animation: swipeleft 0.5s 1;
+        animation-fill-mode: forwards;
+     }
+
+     #main .hide{
+        display: none !important;
+     }
+
+
+     .remove_main {
+        animation: mainswipeleft 0.5s 1;
+        animation-fill-mode: forwards;  
+     }
+
+     .add_main {
+        animation: mainswiperight 0.5s 1;
+        animation-fill-mode: forwards;  
+     }
+
+     .cover_black {
+        animation: contentswipeleft 0.5s 1;
+        animation-fill-mode: forwards;
+        background-color: black;
+        opacity: .54;
+        z-index: 1;
+}
+
+
+
+/*--- Animations ---*/
+
+    @keyframes swiperight {
+        0%      {width: 0%;}
+        100%    {width: 80%;}
+    }
+
+    @keyframes swipeleft {
+        0%      {width: 80%;}
+        100%    {width: 0%;}
+    }
+
+    @keyframes mainswipeleft {
+        0%      {width: 100%;}
+        100%    {width: 20%;}
+    }
+    @keyframes mainswiperight {
+        0%      {width: 20%;}
+        100%    {width: 100%;}
+    }
+
+    @keyframes contentswipeleft {
+        0%      {width: 100vw;}
+        100%    {width: 20vw;}
+    }
+
+    /* Template-End */
+
+
+    #content {
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+    }
+
+        #content .lightson {
+            height: 165px;
+            width: 165px;
+            margin: auto;
+            margin-top: 182px; 
+            display: block;
+            z-index: 1;
+        }
+
+        #content .lightsout {
+            height: 165px;
+            width: 165px;
+            margin: auto;
+            margin-top: 160px;
+            border: solid 22px rgb(189, 189, 189);
+            border-radius: 50%;
+        }
+
+        #content .lightsout_border {
+            display: none;
+            border: solid 42px rgb(189, 189,189);
+            border-radius: 50%;
+    }
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lightsout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/settings.css">
+    </head>
+    <body>
+        <div id="sidenav">
+            <div id="sidenav_header">
+                <img id="close" class="nav_menu hide" onclick="closeNav()" src="./img/ic_arrow_back_white_24dp/ios/ic_arrow_back_white.imageset/ic_arrow_back_white.png">
+            </div>
+            <a href="index.html">
+                <img class="sidenav_icon" src="./img/ic_volume_off_black_48dp/ios/ic_volume_off_48pt.imageset/ic_volume_off_48pt.png">
+                <h1>Lightsout</h1>
+            </a>
+            <a href="mixer.html">
+                <img class="sidenav_icon" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                <h1>Mixer</h1>
+            </a>
+            <a href="settings.html">
+                <img class="sidenav_icon" src="./img/ic_settings_black_48dp/ios/ic_settings_48pt.imageset/ic_settings_48pt.png">
+                <h1>Settings</h1>
+                </a>
+        </div>
+        <div id="main">
+            <header>
+                <img id="open" class="nav_menu" onclick="openNav()" src="./img/ic_menu_white_24dp/ios/ic_menu_white.imageset/ic_menu_white.png">
+                <h1> Settings </h1>
+            </header>
+            <div id="content" onclick="contentNav(this)">
+                <a href="#">
+                    <h1>Log in</h1>
+                </a>
+                <a href="#">
+                    <h1>Contact us</h1>
+                </a>
+                <a href="#">
+                    <h1>About us</h1>
+                </a>
+                <a href="#">
+                    <h1>Send feedback</h1>
+                </a>
+            </div>
+        </div>
+    </body>
+     <script src="./js/javascript_settings.js">
+    </script>
+</html>

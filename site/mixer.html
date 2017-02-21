@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lightsout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/mixer.css">
+    </head>
+    <body>
+        <div id="sidenav">
+            <div id="sidenav_header">
+                <img id="close" class="nav_menu hide" onclick="closeNav()" src="./img/ic_arrow_back_white_24dp/ios/ic_arrow_back_white.imageset/ic_arrow_back_white.png">
+            </div>
+            <a href="index.html">
+                <img class="sidenav_icon" src="./img/ic_volume_off_black_48dp/ios/ic_volume_off_48pt.imageset/ic_volume_off_48pt.png">
+                <h1>Lightsout</h1>
+            </a>
+            <a href="mixer.html">
+                <img class="sidenav_icon" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                <h1>Mixer</h1>
+            </a>
+            <a href="index.html">
+                <img class="sidenav_icon" src="./img/ic_settings_black_48dp/ios/ic_settings_48pt.imageset/ic_settings_48pt.png">
+                <h1>Settings</h1>
+                </a>
+        </div>
+        <div id="main">
+            <header>
+                <img id="open" class="nav_menu" onclick="openNav()" src="./img/ic_menu_white_24dp/ios/ic_menu_white.imageset/ic_menu_white.png">
+                <h1> Mixer </h1>
+            </header>
+            <div id="content" onclick="contentNav(<this></this>)">
+                <div class="box">
+                    <p>Girlfriend</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <img class="volumeoff1 hide" src="./img/ic_volume_off_black_48dp/ios/ic_volume_off_48pt.imageset/ic_volume_off_48pt.png">
+                            <img class="volumeon1" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+
+                            <input type="range" class="slider range1" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value1">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Upstair Neighbors</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <input type="range" class="slider range2" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value2">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>TV</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <input type="range" class="slider range3" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value3">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Karamelldansen</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <input type="range" class="slider range4" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value4">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Outside</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <input type="range" class="slider range5" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value5">100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Radio</p>
+                    <div class="slider_box">
+                        <div class="range_box">
+                            <input type="range" class="slider range6" value="100" min="0" max="200">
+                        </div>
+                        <div class="value_box">
+                            <p class="value6">100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+     <script src="./js/javascript_mixer.js">
+    </script>
+</html>
