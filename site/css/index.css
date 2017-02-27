@@ -8,6 +8,10 @@
 
       /*--- Template on all sites ---*/
 
+      html, body {
+          overflow: hidden;
+      }
+
     body {
         margin: 0;
         display: flex;

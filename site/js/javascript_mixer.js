@@ -64,12 +64,19 @@ function contentNav(element) {
     document.querySelector(".value1").innerHTML = x + "%";
     var volumeOff = document.querySelector(".volumeoff1");
     var volumeOn = document.querySelector(".volumeon1");
+    var volumeDwn = document.querySelector(".volumedown1");
         if (x == 0) {
             volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
         }   else {
             volumeOff.classList.add('hide');
-            volumeOn.classList.remove('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
         }
 }
 
@@ -77,29 +84,109 @@ function contentNav(element) {
     rangeInput2.oninput = function() {
     var x = rangeInput2.value;
     document.querySelector(".value2").innerHTML = x + "%";
+    var volumeOff = document.querySelector(".volumeoff2");
+    var volumeOn = document.querySelector(".volumeon2");
+    var volumeDwn = document.querySelector(".volumedown2");
+        if (x == 0) {
+            volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
+        }   else {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
+        }
 }
 
     var rangeInput3 = document.querySelector(".range3");
     rangeInput3.oninput = function() {
     var x = rangeInput3.value;
     document.querySelector(".value3").innerHTML = x + "%";
+    var volumeOff = document.querySelector(".volumeoff3");
+    var volumeOn = document.querySelector(".volumeon3");
+    var volumeDwn = document.querySelector(".volumedown3");
+        if (x == 0) {
+            volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
+        }   else {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
+        }
 }
 
     var rangeInput4 = document.querySelector(".range4");
     rangeInput4.oninput = function() {
     var x = rangeInput4.value;
     document.querySelector(".value4").innerHTML = x + "%";
+    var volumeOff = document.querySelector(".volumeoff4");
+    var volumeOn = document.querySelector(".volumeon4");
+    var volumeDwn = document.querySelector(".volumedown4");
+        if (x == 0) {
+            volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
+        }   else {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
+        }
 }
 
     var rangeInput5 = document.querySelector(".range5");
     rangeInput5.oninput = function() {
     var x = rangeInput5.value;
     document.querySelector(".value5").innerHTML = x + "%";
+    var volumeOff = document.querySelector(".volumeoff5");
+    var volumeOn = document.querySelector(".volumeon5");
+    var volumeDwn = document.querySelector(".volumedown5");
+        if (x == 0) {
+            volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
+        }   else {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
+        }
 }
 
     var rangeInput6 = document.querySelector(".range6");
     rangeInput6.oninput = function() {
     var x = rangeInput6.value;
     document.querySelector(".value6").innerHTML = x + "%";
+    var volumeOff = document.querySelector(".volumeoff6");
+    var volumeOn = document.querySelector(".volumeon6");
+    var volumeDwn = document.querySelector(".volumedown1");
+        if (x == 0) {
+            volumeOff.classList.remove('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.add('hide');
+        }   else if (x > 99) {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.add('hide');
+            volumeOn.classList.remove('hide');
+        }   else {
+            volumeOff.classList.add('hide');
+            volumeDwn.classList.remove('hide');
+            volumeOn.classList.add('hide');
+        }
 
 }
