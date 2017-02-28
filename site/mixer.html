@@ -19,24 +19,36 @@
                 <img class="sidenav_icon" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
                 <h1>Mixer</h1>
             </a>
-            <a href="settings.html">
+            <a class="settings_link" href="settings.html">
                 <img class="sidenav_icon" src="./img/ic_settings_black_48dp/ios/ic_settings_48pt.imageset/ic_settings_48pt.png">
                 <h1>Settings</h1>
                 </a>
+            <a class="more_links" href="#">
+                <h1>About us</h1>
+            </a>
+            <a class="more_links" href="#">
+                <h1>Contact us</h1>
+            </a>
+            <a class="more_links" href="#">
+                <h1>Send feedback</h1>
+            </a>
+            <a class="more_links" href="#">
+                <h1>Sign in</h1>
+            </a>
         </div>
         <div id="main">
             <header>
                 <img id="open" class="nav_menu" onclick="openNav()" src="./img/ic_menu_white_24dp/ios/ic_menu_white.imageset/ic_menu_white.png">
                 <h1> Mixer </h1>
             </header>
-            <div id="content" onclick="contentNav(<this></this>)">
+            <div id="content" onclick="contentNav(this)">
                 <div class="box">
                     <p>Girlfriend</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff1 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon1" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown1 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff1 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon1" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown1 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range1" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">
@@ -48,9 +60,9 @@
                     <p>Upstair Neighbors</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff2 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon2" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown2 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff2 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon2" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown2 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range2" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">
@@ -62,9 +74,9 @@
                     <p>TV</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff3 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon3" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown3 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff3 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon3" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown3 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range3" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">
@@ -76,9 +88,9 @@
                     <p>Karamelldansen</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff4 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon4" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown4 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff4 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon4" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown4 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range4" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">
@@ -90,9 +102,9 @@
                     <p>Outside</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff5 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon5" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown5 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff5 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon5" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown5 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range5" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">
@@ -104,9 +116,9 @@
                     <p>Radio</p>
                     <div class="slider_box">
                         <div class="range_box">
-                            <img class="volumeoff6 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
-                            <img class="volumeon6" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
-                            <img class="volumedown6 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeoff6 hide" src="./img/photoshop_images/ic_volume_down_48pt.png">
+                            <img class="volumeimage volumeon6" src="./img/ic_volume_up_black_48dp/ios/ic_volume_up_48pt.imageset/ic_volume_up_48pt.png">
+                            <img class="volumeimage volumedown6 hide" src="./img/ic_volume_down_black_48dp/ios/ic_volume_down_48pt.imageset/ic_volume_down_48pt.png">
                             <input type="range" class="slider range6" value="100" min="0" max="200">
                         </div>
                         <div class="value_box">

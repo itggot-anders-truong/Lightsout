@@ -69,7 +69,7 @@ function contentNav(element) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');
@@ -91,7 +91,7 @@ function contentNav(element) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');
@@ -113,7 +113,7 @@ function contentNav(element) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');
@@ -135,7 +135,7 @@ function contentNav(element) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');
@@ -157,7 +157,7 @@ function contentNav(element) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');
@@ -174,12 +174,12 @@ function contentNav(element) {
     document.querySelector(".value6").innerHTML = x + "%";
     var volumeOff = document.querySelector(".volumeoff6");
     var volumeOn = document.querySelector(".volumeon6");
-    var volumeDwn = document.querySelector(".volumedown1");
+    var volumeDwn = document.querySelector(".volumedown6");
         if (x == 0) {
             volumeOff.classList.remove('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.add('hide');
-        }   else if (x > 99) {
+        }   else if (x >= 100) {
             volumeOff.classList.add('hide');
             volumeDwn.classList.add('hide');
             volumeOn.classList.remove('hide');

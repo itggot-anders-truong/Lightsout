@@ -122,6 +122,9 @@
         background-color: black;
         opacity: .54;
         z-index: 1;
+     }
+        #main .hide {
+            display: none;
 }
 
 

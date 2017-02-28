@@ -72,6 +72,10 @@
     width: 0%;
     }
 
+        #sidenav .more_links {
+            display: none;
+        }
+
         #sidenav a {
             text-decoration: none;
             overflow: hidden;
@@ -131,7 +135,7 @@
         background-color: black;
         opacity: .54;
         z-index: 1;
-}
+    }
 
 
 
@@ -188,9 +192,110 @@
             border-radius: 50%;
         }
 
-        #content .lightsout_border {
+        #content h1 {
             display: none;
-            border: solid 42px rgb(189, 189,189);
-            border-radius: 50%;
-    }
+        }
+  }
+
+/*Desktop version */
+
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+
+        /* Template on all sites */
+
+        body {
+            margin: 0;
+        }
+
+        #sidenav .sidenav_icon, #sidenav #sidenav_header, header .nav_menu, .hide{
+                display: none;
+            }
+
+
+        #sidenav {
+            width: 100%;
+            height: 78px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #212121;
+            margin-top: 100px;
+        }
+
+
+            #sidenav h1 {
+                color: white;
+                font-family: sans-serif;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            #sidenav a {
+                text-decoration: none;
+                font-size: 14px;
+                margin: auto;
+            }
+
+            #sidenav a:hover, #sidenav a:active {
+                font-size: 16px;
+                transition: 0.2s;
+            }
+            #sidenav .settings_link {
+                display: none;
+        }
+
+
+        #main {
+            display: flex;
+            flex-direction: column;
+        }
+
+            #main header {
+                margin-top: -180px;
+                margin-bottom: 200px;
+                background-color: black;
+            }
+
+            #main h1 {
+                text-align: center;
+                font-family: sans-serif;
+                color: white;
+                font-size: 42px;
+            }
+
+        /* Template-End */
+
+        #content {
+            display: block;
+            text-align: center;
+        }
+
+            #content .lightson, #content .lightsout {
+                width: 250px;
+                height: 250px;
+                cursor: pointer;
+            }
+
+            #content h1 {
+                color: black;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+
+            #content .lightsout {
+                border: solid 22px rgb(189, 189, 189);
+                border-radius: 50%;
+                margin-top: -22px;
+            }
+
+            /*Animations */
+        
+        @keyframes blurout {
+            0% {opacity: 1}
+            100% {opacity: 0}
+        }
+
+}
 
